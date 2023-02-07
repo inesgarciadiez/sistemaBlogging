@@ -1,0 +1,30 @@
+<div>
+    <h1 class="titlePage">Blogging System</h1>
+    <hr>
+
+    <h2>Form</h2>
+
+    <div class="box">
+        <label for="title" id="textStyle">Title: </label>
+        <input type="text" name="title" id="title" [(ngModel)] = "title">
+    </div>
+    <div class="box">
+        <label for="image" id="textStyle">Image: </label>
+        <input type="text" id="image" [(ngModel)] = "image">
+    </div>
+    <div class="box">
+        <label for="text" id="textStyle">Text: </label>
+        <textarea name="text" id="text" cols="30" rows="10"  [(ngModel)] = "text"></textarea>
+    </div>
+    <div class="box">
+        <label for="date" id="textStyle">Date: </label>
+        <input type="pickerDate" [(ngModel)] = "date">
+    </div>
+
+    <button (click)="send()">Send</button>
+
+    <section>
+        <h2>News list</h2>
+        <ul [innerHTML]="publish"></ul>
+    </section>
+</div>
