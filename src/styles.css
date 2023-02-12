@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+.article {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    min-width: 50%;
+    padding: 2%;
+}
+
+.title {
+    padding: 5px;;
+}
+
+.imagen {
+    width: auto;
+    height: auto;
+}
